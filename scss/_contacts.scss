@@ -1,0 +1,30 @@
+.contacts {
+    padding-left: 18px;
+    &__title {
+        padding-bottom: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__content {
+        max-width: 380px;
+        font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
+        line-height: 124%;
+        margin-bottom: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 1179px) {
+    .contacts {
+        padding-left: 30px;
+        padding-right: 30px;
+        &__title {
+            padding-left: 16px;
+        }
+
+    } 
+}

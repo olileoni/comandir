@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Circe';
+    src: local('Circe Regular'),
+    local('Circe-Regular'),
+    url('../assets/fonts/Circe-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Circe-Regular.woff') format('woff'),
+    url('../assets/fonts/Circe-Regular.eot') format('eot'),
+    url('../assets/fonts/Circe-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    }
+
+@font-face {
+    font-family: 'Circe';
+    src: local('Circe Bold'),
+    local('Circe-Bold'),
+    url('../assets/fonts/Circe-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Circe-Bold.woff') format('woff'),
+    url('../assets/fonts/Circe-Bold.eot') format('eot'),
+    url('../assets/fonts/Circe-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    }

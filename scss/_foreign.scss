@@ -1,0 +1,28 @@
+.foreign {
+    margin-left: 12px;
+    &__items {
+        gap: calc(2px + (54 - 2) * ((100vw - 320px) / (1920 - 320)));
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+}
+
+@media (max-width: 1179px) {
+    .foreign {
+        &__items {
+            padding-right: 30px;
+            padding-left: 30px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .foreign {
+        &__items {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}

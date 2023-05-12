@@ -1,0 +1,48 @@
+.cars {
+    &__text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: calc(24px + 8 * ((100vw - 320px) / (1920 - 320)));
+        line-height: 140%;
+        border: 10px solid $brown-color;
+        padding-top: calc(25px + (32 - 25) * ((100vw - 320px) / (1920 - 320)));
+        padding-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+        padding-right: calc(10px + (181 - 10) * ((100vw - 320px) / (1920 - 320)));
+        padding-left: calc(25px + (181 - 25) * ((100vw - 320px) / (1920 - 320)));
+        margin-top: calc(9px + (40 - 9) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: calc(30px + (48 - 30) * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        gap: calc(2px + (107 - 2) * ((100vw - 320px) / (1920 - 320)));
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1920 - 320)));
+    }
+    
+    &__item {
+        text-align: center;
+        &-img {
+            width: calc(145px + (150 - 145) * ((100vw - 320px) / (1920 - 320)));
+        }
+        &-desc {
+            margin-top: 3px;
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .cars {
+        &__items {
+            padding-right: 24px;
+            padding-left: 24px;
+        }  
+        &__text {
+            border: 5px solid $brown-color;
+        }
+    }
+}
